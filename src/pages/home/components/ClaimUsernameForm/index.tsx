@@ -1,5 +1,4 @@
 import { Button, TextInput, Text } from '@ignite-ui/react'
-import { ArrowRight } from 'phosphor-react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 
@@ -48,7 +47,7 @@ export function ClaimUsernameForm() {
         />
         <Button size="sm" type="submit" disabled={isSubmitting}>
           Reservar
-          <ArrowRight />
+          <span>-&gt;</span>
         </Button>
       </Form>
       <FormAnnotation>

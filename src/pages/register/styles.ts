@@ -30,6 +30,18 @@ export const Form = styled(Box, {
     flexDirection: 'column',
     gap: '$2',
   },
+
+  span: {
+    fontFamily: 'inter',
+    display: 'inline-block',
+    transition: 'transform 200ms',
+  },
+
+  '@media(hover: hover) and (pointer: fine)': {
+    ':hover span': {
+      transform: 'translateX(4px)',
+    },
+  },
 })
 
 export const FormError = styled(Text, {

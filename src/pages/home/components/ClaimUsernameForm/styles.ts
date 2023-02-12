@@ -7,8 +7,20 @@ export const Form = styled(Box, {
   marginTop: '$4',
   padding: '$4',
 
+  span: {
+    fontFamily: 'inter',
+    display: 'inline-block',
+    transition: 'transform 200ms',
+  },
+
   '@media(max-width: 600px)': {
     gridTemplateColumns: '1fr',
+  },
+
+  '@media(hover: hover) and (pointer: fine)': {
+    ':hover span': {
+      transform: 'translateX(2px)',
+    },
   },
 })
 

@@ -1,5 +1,4 @@
 import { Button, Heading, MultiStep, Text, TextInput } from '@ignite-ui/react'
-import { ArrowRight } from 'phosphor-react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
@@ -51,6 +50,8 @@ export default function Register() {
         name: data.name,
         username: data.username,
       })
+
+      await router.push('/register/connect-calendar')
     } catch (err) {
       if (err instanceof AxiosError && err?.response?.data?.message) {
         alert(err.response.data.message)
@@ -95,8 +96,7 @@ export default function Register() {
         </label>
 
         <Button type="submit" disabled={isSubmitting}>
-          Próximo passo
-          <ArrowRight />
+          Próximo passo <span>-&gt;</span>
         </Button>
       </Form>
     </Container>
