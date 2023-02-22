@@ -102,8 +102,6 @@ export function Calendar() {
     return calendarWeeks
   }, [currentDate])
 
-  console.log(calendarWeeks)
-
   return (
     <CalendarContainer>
       <CalendarHeader>
