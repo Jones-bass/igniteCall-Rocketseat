@@ -5,7 +5,7 @@ export const Container = styled(Box, {
   padding: 0,
   display: 'grid',
   position: 'relative',
-  ariants: {
+  variants: {
     isTimePickerOpen: {
       true: {
         gridTemplateColumns: '1fr 280px',
