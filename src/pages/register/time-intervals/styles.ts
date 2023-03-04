@@ -4,6 +4,18 @@ export const IntervalBox = styled(Box, {
   marginTop: '$6',
   display: 'flex',
   flexDirection: 'column',
+
+  span: {
+    fontFamily: 'inter',
+    display: 'inline-block',
+    transition: 'transform 200ms',
+  },
+
+  '@media(hover: hover) and (pointer: fine)': {
+    ':hover span': {
+      transform: 'translateX(2px)',
+    },
+  },
 })
 
 export const IntervalContainer = styled('div', {
